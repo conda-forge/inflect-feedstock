@@ -14,14 +14,16 @@ Summary: Correctly generate plurals, singular nouns, ordinals, indefinite articl
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/inflect-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/inflect-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/inflect-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/inflect-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/inflect-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/inflect-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/inflect-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/inflect-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/inflect-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/inflect-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/inflect-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/inflect-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/inflect/badges/version.svg)](https://anaconda.org/conda-forge/inflect)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/inflect/badges/downloads.svg)](https://anaconda.org/conda-forge/inflect)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-inflect-green.svg)](https://anaconda.org/conda-forge/inflect) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/inflect.svg)](https://anaconda.org/conda-forge/inflect) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/inflect.svg)](https://anaconda.org/conda-forge/inflect) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/inflect.svg)](https://anaconda.org/conda-forge/inflect) |
 
 Installing inflect
 ==================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
