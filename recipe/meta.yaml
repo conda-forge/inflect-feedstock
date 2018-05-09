@@ -1,9 +1,8 @@
 {% set name = "inflect" %}
-{% set version = "0.2.5" %}
+{% set version = "0.3.1" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "2014c8dcb2114ebae2941ba3f0fbd98a02c846792a7b72f2da31eb9aa431a818" %}
-{% set build = 0 %}
+{% set hash = "51d3d0fe0db77fa9315c45ce5933a64d9043a36d42e8b1a082d3379dc39754cf" %}
 
 package:
   name: {{ name|lower }}
@@ -11,17 +10,18 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
-    - setuptools
+    - pip
 
   run:
     - python
