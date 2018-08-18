@@ -36,8 +36,8 @@ about:
   license: AGPL 3.0
   license_family: AGPL
   summary: 'Correctly generate plurals, singular nouns, ordinals, indefinite articles; convert numbers to words'
-  dev_url: https://github.com/pwdyson/inflect.py
-  doc_url: https://github.com/pwdyson/inflect.py
+  dev_url: https://github.com/jazzband/inflect
+  doc_url: https://github.com/jazzband/inflect
 
 extra:
   recipe-maintainers:
