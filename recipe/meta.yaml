@@ -29,7 +29,7 @@ requirements:
 
 test:
   imports:
-      - inflect
+    - inflect
 
 about:
   home: http://pypi.python.org/pypi/inflect
