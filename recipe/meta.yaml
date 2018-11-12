@@ -1,8 +1,8 @@
 {% set name = "inflect" %}
-{% set version = "1.0.0" %}
+{% set version = "2.1.0" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "7d8e075740de6e16fead120af6ddb9b97f6d708573431113674b73b10a258352" %}
+{% set hash = "4ded1b2a6fcf0fc0397419c7727f131a93b67b80d899f2973be7758628e12b73" %}
 
 package:
   name: {{ name|lower }}
