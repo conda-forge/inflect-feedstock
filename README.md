@@ -1,11 +1,7 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About inflect
 =============
 
-Home: http://pypi.python.org/pypi/inflect
+Home: https://github.com/jazzband/inflect
 
 Package license: MIT
 
@@ -18,8 +14,17 @@ Summary: Correctly generate plurals, singular nouns, ordinals, indefinite articl
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/inflect-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/inflect-feedstock)
+
+<table><tr>
+    
+    <td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=5404&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/inflect-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
@@ -113,5 +118,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@dbast](https://github.com/dbast/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
 
