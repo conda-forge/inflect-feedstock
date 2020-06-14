@@ -25,8 +25,12 @@ requirements:
     - python
 
 test:
+  requires:
+    - pip
   imports:
     - inflect
+  commands:
+    - python -m pip check
 
 about:
   home: https://github.com/jazzband/inflect
