@@ -11,17 +11,17 @@ source:
 
 build:
   skip: True  # [py<36]
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
 requirements:
   host:
     - pip
     - python
-    - setuptools_scm >=3.4.1
+    - setuptools-scm >=3.4.1
     - toml
   run:
-    - importlib_metadata  # [py<38]
+    - importlib-metadata  # [py<38]
     - python
 
 test:
