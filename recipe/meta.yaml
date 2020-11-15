@@ -1,18 +1,18 @@
 {% set name = "inflect" %}
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: def6f3791be9181f0c01e0bf5949304007ec6e04c6674fbef7cc49c657b8a9a5
+  sha256: 0527947406025991506b252620da69a5efdc72bf61aa6b4b4976e3bd71c19660
 
 build:
-  skip: True  # [py<36]
-  number: 3
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  skip: true  # [py<36]
+  number: 0
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
