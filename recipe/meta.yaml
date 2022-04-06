@@ -1,5 +1,5 @@
 {% set name = "inflect" %}
-{% set version = "5.4.0" %}
+{% set version = "5.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b58d58c4e73ffca9b25e075c1c4fc9cadecbb5c99d7cd9f3cdedda73ece83c1c
+  sha256: 0b7f13909a7769bc25d168965c1e665e70686de6b577121b96448bc28289971f
 
 build:
   skip: true  # [py<36]
-  number: 1
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
