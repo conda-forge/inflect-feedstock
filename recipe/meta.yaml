@@ -10,19 +10,19 @@ source:
   sha256: 82a7cc029897faa7612dfa0dc7844e04d0e16a646f437aaa670b4523bc1767f1
 
 build:
-  skip: true  # [py<36]
   number: 0
+  noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3
     - setuptools-scm >=3.4.1
     - toml
   run:
-    - importlib-metadata  # [py<38]
-    - python
+    - importlib-metadata
+    - python >=3
 
 test:
   requires:
