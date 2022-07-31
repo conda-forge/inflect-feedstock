@@ -1,5 +1,5 @@
 {% set name = "inflect" %}
-{% set version = "5.6.2" %}
+{% set version = "6.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aadc7ed73928f5e014129794bbac03058cca35d0a973a5fc4eb45c7fa26005f9
+  sha256: 0bc1516ec2725e2d8221707a612245093cb6f1cea209cfd8cbd4fc5e96fa6365
 
 build:
   number: 0
@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python >=3.7
     - setuptools-scm >=3.4.1
     - toml
   run:
     - importlib-metadata
-    - python >=3
+    - pydantic
+    - python >=3.7
 
 test:
   requires:
