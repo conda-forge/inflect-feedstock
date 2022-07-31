@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3
+    - python >=3.7
     - setuptools-scm >=3.4.1
     - toml
   run:
     - importlib-metadata
-    - python >=3
+    - pydantic
+    - python >=3.7
 
 test:
   requires:
