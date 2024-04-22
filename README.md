@@ -3,15 +3,11 @@ About inflect-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/inflect-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/jazzband/inflect
+Home: https://github.com/jaraco/inflect
 
 Package license: MIT
 
 Summary: Correctly generate plurals, singular nouns, ordinals, indefinite articles; convert numbers to words
-
-Development: https://github.com/jazzband/inflect
-
-Documentation: https://github.com/jazzband/inflect
 
 Current build status
 ====================
