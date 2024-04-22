@@ -16,14 +16,15 @@ build:
 
 requirements:
   host:
-    - pip
-    - python >=3.7
+    - python >=3.8
+    - setuptools >=56
     - setuptools-scm >=3.4.1
-    - toml
+    - pip
   run:
-    - importlib-metadata
-    - pydantic
-    - python >=3.7
+    - python >=3.8
+    - more-itertools
+    - typeguard >=4.0.1
+    - typing-extensions
 
 test:
   requires:
@@ -34,13 +35,10 @@ test:
     - python -m pip check
 
 about:
-  home: https://github.com/jazzband/inflect
-  license: MIT
-  license_family: MIT
-  license_file: LICENSE
+  home: https://github.com/jaraco/inflect
   summary: Correctly generate plurals, singular nouns, ordinals, indefinite articles; convert numbers to words
-  dev_url: https://github.com/jazzband/inflect
-  doc_url: https://github.com/jazzband/inflect
+  license: MIT
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
