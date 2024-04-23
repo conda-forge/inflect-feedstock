@@ -1,5 +1,5 @@
 {% set name = "inflect" %}
-{% set version = "7.2.0" %}
+{% set version = "7.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 32feacfacfcae2f22e6fccdea10f0ddf26a638fac434d0dddaafbca0034f3784
+  sha256: a7ce5e23d6798734f256c1ad9ed52186b8ec276f10b18ce3d3ecb19c21eb6cb6
 
 build:
   number: 0
