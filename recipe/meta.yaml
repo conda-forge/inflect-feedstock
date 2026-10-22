@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=56
+    - setuptools >=77
     - setuptools-scm >=3.4.1
     - pip
   run:
     - python >={{ python_min }}
-    - more-itertools
+    - jaraco.functools
+    - more-itertools >=8.5.0
     - typeguard >=4.0.1
     - typing-extensions
 
