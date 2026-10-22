@@ -1,13 +1,13 @@
 {% set name = "inflect" %}
-{% set version = "7.5.0" %}
+{% set version = "7.6.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: faf19801c3742ed5a05a8ce388e0d8fe1a07f8d095c82201eb904f5d27ad571f
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: b46875b50534a7cd5fcfb5a7c971bb93fe68948c43ca53e9833bd1e1a69221bd
 
 build:
   number: 0
@@ -17,12 +17,13 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=56
+    - setuptools >=77
     - setuptools-scm >=3.4.1
     - pip
   run:
     - python >={{ python_min }}
-    - more-itertools
+    - jaraco.functools
+    - more-itertools >=8.5.0
     - typeguard >=4.0.1
     - typing-extensions
 
